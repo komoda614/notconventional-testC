@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* 共通部分 */
+html {
+  font-size: 1rem;
+}
+
+html body {
+  font-family: sans-serif, "メイリオ", "Meiryo";
+  line-height: 1.7;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+html body a {
+  text-decoration: none;
+  /*下線引かない*/
+  display: block;
+  /*ブロック要素に*/
+}
+
+html body img {
+  max-width: 100%;
+  /*画像がはみ出さないように*/
+}
+
+html body main {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*
+      .btn {
+        padding: 8px 24px;
+        color: white;
+        opacity: 0.8;
+        border-radius: 4px;
+        background-color: #f778b8;
+        cursor: pointer;
+        box-shadow: 0 5px #e04893;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:active {
+          position: relative;
+          top: 7px;
+          box-shadow: none;
+        }
+    
+      } //btn
+     へこむボタン*/
+}
+
+html body main .secList {
+  width: 20vw;
+  height: 17vw;
+  z-index: 9000;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList {
+    width: 12vw;
+    height: 10.3vw;
+  }
+}
+
+html body main .secList img {
+  width: 20vw;
+  height: 17vw;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList img {
+    width: 12vw;
+    height: 10.3vw;
+  }
+}
+
+html body main .secList1 {
+  position: fixed;
+  top: 3vw;
+  bottom: auto;
+  right: auto;
+  left: 4vw;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList1 {
+    position: fixed;
+    top: 1vw;
+    bottom: auto;
+    right: auto;
+    left: 4vw;
+  }
+}
+
+html body main .secList2 {
+  position: fixed;
+  top: 22vw;
+  bottom: auto;
+  right: auto;
+  left: 4vw;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList2 {
+    position: fixed;
+    top: 12vw;
+    bottom: auto;
+    right: auto;
+    left: 4vw;
+  }
+}
+
+html body main .secList3 {
+  position: fixed;
+  top: 41vw;
+  bottom: auto;
+  right: auto;
+  left: 4vw;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList3 {
+    position: fixed;
+    top: 23vw;
+    bottom: auto;
+    right: auto;
+    left: 4vw;
+  }
+}
+
+html body main .secList4 {
+  position: fixed;
+  top: 12vw;
+  bottom: auto;
+  right: auto;
+  left: 21vw;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList4 {
+    position: fixed;
+    top: 6.5vw;
+    bottom: auto;
+    right: auto;
+    left: 14vw;
+  }
+}
+
+html body main .secList5 {
+  position: fixed;
+  top: 3vw;
+  bottom: auto;
+  left: 38vw;
+  right: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList5 {
+    position: fixed;
+    top: 1vw;
+    bottom: auto;
+    right: 23vw;
+    left: auto;
+  }
+}
+
+html body main .secList6 {
+  position: fixed;
+  top: auto;
+  bottom: 29vw;
+  right: 3vw;
+  left: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList6 {
+    position: fixed;
+    top: auto;
+    bottom: 18vw;
+    right: 3vw;
+    left: auto;
+  }
+}
+
+html body main .secList7 {
+  position: fixed;
+  top: auto;
+  bottom: 11vw;
+  right: 3vw;
+  left: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList7 {
+    position: fixed;
+    top: auto;
+    bottom: 7vw;
+    right: 3vw;
+    left: auto;
+  }
+}
+
+html body main .secList8 {
+  position: fixed;
+  top: auto;
+  bottom: 2vw;
+  right: 20vw;
+  left: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList8 {
+    position: fixed;
+    top: auto;
+    bottom: 1vw;
+    right: 13vw;
+    left: auto;
+  }
+}
+
+html body main .secList9 {
+  position: fixed;
+  top: auto;
+  bottom: 10vw;
+  right: 38vw;
+  left: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList9 {
+    position: fixed;
+    top: 6vw;
+    bottom: auto;
+    right: 13vw;
+    left: auto;
+  }
+}
+
+html body main .secList10 {
+  position: fixed;
+  top: auto;
+  bottom: 2vw;
+  right: 56vw;
+  left: auto;
+}
+
+@media (min-width: 1025px) {
+  html body main .secList10 {
+    position: fixed;
+    top: 1vw;
+    bottom: auto;
+    right: 3vw;
+    left: auto;
+  }
+}
+
+html body main .section {
+  /* widthやheightの値は要カスタマイズ */
+}
+
+html body main .section .model-viewer {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html body main .section .model-viewer ​ .model-viewer-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  height: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  color: white;
+  background-color: #6b6868;
+  border: none;
+}
+
+html body main .section .model1 {
+  background-image: url(../image/bg1_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model1 {
+    background-image: url(../image/bg1_pc.png);
+  }
+}
+
+html body main .section .model2 {
+  background-image: url(../image/bg2_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model2 {
+    background-image: url(../image/bg2_pc.png);
+  }
+}
+
+html body main .section .model3 {
+  background-image: url(../image/bg1_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model3 {
+    background-image: url(../image/bg1_pc.png);
+  }
+}
+
+html body main .section .model4 {
+  background-image: url(../image/bg2_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model4 {
+    background-image: url(../image/bg2_pc.png);
+  }
+}
+
+html body main .section .model5 {
+  background-image: url(../image/bg1_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model5 {
+    background-image: url(../image/bg1_pc.png);
+  }
+}
+
+html body main .section .model6 {
+  background-image: url(../image/bg2_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model6 {
+    background-image: url(../image/bg2_pc.png);
+  }
+}
+
+html body main .section .model7 {
+  background-image: url(../image/bg1_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model7 {
+    background-image: url(../image/bg1_pc.png);
+  }
+}
+
+html body main .section .model8 {
+  background-image: url(../image/bg2_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model8 {
+    background-image: url(../image/bg2_pc.png);
+  }
+}
+
+html body main .section .model9 {
+  background-image: url(../image/bg1_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model9 {
+    background-image: url(../image/bg1_pc.png);
+  }
+}
+
+html body main .section .model10 {
+  background-image: url(../image/bg2_smf.png);
+}
+
+@media (min-width: 1025px) {
+  html body main .section .model10 {
+    background-image: url(../image/bg2_pc.png);
+  }
+}
